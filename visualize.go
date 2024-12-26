@@ -148,7 +148,7 @@ func Visualize(c *Container, w io.Writer, opts ...VisualizeOption) error {
 		}
 	}
 
-	return _graphTmpl.Execute(w, dg)
+	return nil //_graphTmpl.Execute(w, dg)
 }
 
 // CanVisualizeError returns true if the error is an errVisualizer.
